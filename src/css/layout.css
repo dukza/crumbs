@@ -1,0 +1,500 @@
+@charset "UTF-8";
+html, body {
+  height: 100vh;
+}
+
+.sLoginBg {
+  background-color: #fff !important;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.sLoginWrap {
+  height: 100%;
+}
+
+.sLogin {
+  width: 320px !important;
+  padding-top: 85px !important;
+  padding-bottom: 100px !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #DBDBDB !important;
+  font-size: 16px !important;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #DBDBDB !important;
+  font-size: 16px !important;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #DBDBDB !important;
+  font-size: 16px !important;
+}
+
+.form-control::placeholder {
+  color: #DBDBDB !important;
+  font-size: 16px !important;
+}
+
+.form-48 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.modal-title .btn-right {
+  right: 0.8em !important;
+}
+
+.modal-body .sLabel {
+  min-width: 56px;
+  margin-right: 0.8rem;
+}
+
+#header.navbar {
+  height: 86px;
+}
+
+#header.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+#header .nav-item .nav-link.active {
+  color: #7900F2;
+}
+
+#header .navbar-toggler {
+  color: #000;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.pagination {
+  padding-top: 3.2rem;
+}
+
+.sBox-violet {
+  font-size: 2.4rem;
+  text-align: center;
+  border: 2px solid #7900F2;
+  border-radius: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sBox-form {
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid #DBDBDB;
+  border-radius: 1.2rem;
+  background-color: #FCFCFC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sBox-white {
+  border: 1px solid #EFEFEF;
+  border-radius: 1.2rem;
+  background-color: white;
+  padding: 2rem 2rem !important;
+}
+
+.sCircle {
+  width: 12.2rem;
+  height: 12.2rem;
+  border-radius: 50rem;
+  background-color: white;
+  margin-bottom: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sCircle .sIcon {
+  font-size: 3.2rem !important;
+}
+
+.sBtnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sBtnWrap button {
+  margin-right: 0.4rem;
+}
+
+.sBtnWrap button:last-child {
+  margin-right: 0rem;
+}
+
+.container {
+  max-width: 1180px !important;
+}
+
+.contentTitle-violet {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #7900F2;
+}
+
+.contentTitle-violet .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentTitle-violet .text {
+  font-size: 31px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.contentTitle-typo {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  background-image: url("./../images/bg-FAQ.svg");
+  background-size: 20rem;
+  background-position: center 50px;
+  background-repeat: no-repeat;
+}
+
+.contentTitle-typo .text {
+  font-size: 31px;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
+.detailTitle {
+  font-size: 2.4rem;
+  border-bottom: 2px solid #EFEFEF;
+  padding-top: 4.6rem;
+  padding-bottom: 2.7rem;
+}
+
+.detailTitle .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detailTitle .btn {
+  width: 40px;
+  margin-right: 0.8rem;
+}
+
+.sectionTitle {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionTitle button {
+  margin-left: auto;
+}
+
+.siderWrap {
+  padding-top: 1.2rem;
+}
+
+.siderWrap .nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+}
+
+.siderWrap .nav-link {
+  font-size: 1.8rem;
+  color: #989898;
+  border-bottom: 1px solid #DBDBDB;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.siderWrap .nav-link.active {
+  color: #7900F2;
+  border-bottom: 2px solid #7900F2;
+}
+
+.sTabWrap {
+  margin-top: 1.4rem !important;
+}
+
+.sTabWrap .nav-item {
+  display: inline-block;
+}
+
+.sTabWrap .nav-link.active, .sTabWrap .show > .nav-link {
+  color: #7900F2 !important;
+  border-bottom: 2px solid #7900F2 !important;
+}
+
+.sTabWrap .nav-link {
+  font-size: 1.6rem;
+  color: #000 !important;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.sLogin .sTabWrap .nav-link.active, .sLogin .sTabWrap .show > .nav-link {
+  font-weight: 700;
+  color: #000 !important;
+  border-bottom: 2px solid #7900F2 !important;
+}
+
+.sLogin .sTabWrap .nav-link {
+  font-size: 1.8rem !important;
+  color: #989898 !important;
+  border-bottom: 2px solid #DBDBDB !important;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.contentWrap {
+  padding-top: 4.5rem;
+  padding-bottom: 8rem;
+  background-color: #FCFCFC;
+  min-height: 75vh;
+}
+
+.detailConWrap {
+  min-height: 75vh;
+  background-color: #FCFCFC;
+}
+
+footer {
+  background-color: #1A1C20;
+  padding-top: 5.2rem;
+  padding-bottom: 6.4rem;
+}
+
+.sBtn-light {
+  padding: 0.8rem 1.4rem !important;
+  font-size: 1.4rem;
+  border: 1px solid #DBDBDB !important;
+  background-color: #EFEFEF;
+}
+
+.sBtn-light:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-border-violet-main {
+  font-size: 1.6rem !important;
+  color: #7900F2 !important;
+  border: 1px solid #7900F2 !important;
+  background-color: white;
+  padding: 0.8rem 2rem !important;
+}
+
+.btn-violet-main {
+  font-size: 1.4rem;
+  color: white !important;
+  border: 1px solid #7900F2 !important;
+  background-color: #7900F2;
+  padding: 0.8rem 2rem !important;
+}
+
+.sFaq {
+  font-size: 2rem;
+  border: 1px solid #EFEFEF;
+  border-radius: 2.4rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.sFaq .sA {
+  color: #7900F2;
+  border-top: 1px solid #EFEFEF;
+}
+
+.sFaq .sQ {
+  color: black;
+}
+
+.sFaq .sQ .text {
+  display: inline-block;
+  margin-right: 1.6rem;
+}
+
+.sFaq .sh {
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sFaq .sBtn-toggle {
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 86px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #FCFCFC;
+    -webkit-transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .navbar-nav {
+    margin-top: 1.6rem;
+  }
+}
+
+/* 웹 */
+@media (min-width: 992px) {
+  .sLoginBg {
+    background-color: #7900F2 !important;
+  }
+  .sLoginWrap {
+    min-width: 740px;
+    min-height: 50vh;
+    border-radius: 1rem;
+    margin-top: 55px !important;
+    margin-bottom: 55px !important;
+    height: auto;
+    -webkit-box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.06) !important;
+            box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.06) !important;
+  }
+  .sLogin {
+    width: 380px !important;
+  }
+  .modal-title .btn-right {
+    right: 3em !important;
+  }
+  .w-664 {
+    max-width: 664px !important;
+  }
+  .w-785 {
+    max-width: 785px !important;
+  }
+  #header .navbar-brand {
+    padding-right: 3rem;
+  }
+  #header.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .contentTitle-violet {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .contentTitle-typo {
+    padding-top: 15rem;
+    padding-bottom: 6rem;
+    background-size: 30rem;
+    background-position: center 110px;
+  }
+  .detailTitle {
+    padding-top: 2.4rem;
+    padding-bottom: 1.4rem;
+  }
+  .sectionTitle {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+  .siderWrap {
+    padding-top: 6rem;
+    text-align: right;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .siderWrap .nav-item {
+    text-align: right;
+  }
+  .siderWrap .nav-link:first-child {
+    padding-top: 0rem;
+  }
+  .siderWrap .nav-link {
+    font-size: 1.8rem;
+    color: #989898;
+    border-bottom: 2px solid #DBDBDB;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 4rem;
+  }
+  .siderWrap .nav-link.active {
+    color: #7900F2;
+    border-bottom: 2px solid #7900F2;
+  }
+  .contentWrap {
+    padding-top: 6rem;
+    padding-bottom: 16rem;
+  }
+  .contentWrap-bottom {
+    padding-bottom: 16rem;
+  }
+  .sBox-white {
+    padding: 4rem 6rem !important;
+  }
+  .sFaq {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
+}

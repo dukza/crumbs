@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- 스타일시트 -->
+        <link rel="stylesheet" href="./../src/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="./../src/css/styles.css">
+        <!-- 부트스트랩 -->
+        <link href="./../src/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+        </style>
+        <title>crumbs</title>
+    </head>
+    <body>
+        <!-- 네비 -->
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg" aria-label="Main navigation" id="header">
+                    <!-- 로고 -->
+                    <a class="text-brand-violet-main text-center text-decoration-none navbar-brand" href="#">
+                    <span class="icon-logo font-20 m24-b" title="Crumbs"></span>
+                    </a>  
+                    <!-- 로고 -->
+                    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+                        <i class="fal fa-bars font-24"></i>
+                    </button>
+                    <div class="navbar-collapse offcanvas-collapse">
+                        <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#docuCare">등기케어</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#docuCarePlus">등기케어플러스</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">이용안내/요금</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">자주하는 질문</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">마이페이지</a>
+                            </li>
+                        </ul>
+                        <a class="btn text-black font-14 bg-lighter-hover border p4-t p4-b p20-x" role="button">로그인</a>
+                    </div>
+                </nav>
+            </div>
+        </div>  
+        <!-- 네비 -->
+        <div class="container-fluid ">
+            <div class="row tab-content">
+                <div class="col-12 tab-pane active" id="docuCare">
+                    <div class="row">
+                        <!-- 페이지 타이틀 -->
+                        <div class="col-12 contentTitle">
+                            <div class="row">
+                                <span class="text">
+                                    등기케어
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //페이지 타이틀 -->
+                        <!-- 컨텐츠 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-lg-2">
+                                    <div class="row">
+                                        <div class="col ">
+                                            <div class="row">
+                                                <ul class="nav col-auto lg-ml-auto m0-r md-m40-r siderWrap">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#docuApply">등기신청</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#docuProcess">등기진행 현황</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#docuSave">임시문서 저장</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg contentWrap">
+                                    <div class="row">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row tab-content">
+                                                        <div class="col-12 tab-pane active" id="docuApply">
+                                                            <div class="row" >
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 tab-pane" id="docuProcess">
+                                                            2
+                                                        </div> 
+                                                        <div class="col-12 tab-pane" id="docuSave">
+                                                            3
+                                                        </div>                                     
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //컨텐츠 -->                            
+                    </div>
+                </div>
+                <div class="col-12 tab-pane" id="docuCarePlus">
+                </div>
+            </div>
+        </div>
+
+        <!-- 하단 -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <!-- 로고 -->
+                        <div class="col-12 col-md-6 m48-b lg-m0-b">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto icon-logo text-brand-violet-light font-20 m28-r m8-b lg-m0-b" title="Crumbs"></div>
+                                <div class="col-12 col-lg-auto font-16 text-white-50">
+                                    © 2019 Crumbs Inc. All Rights Reserved
+                                </div>                                 
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto ml-auto">
+                            <div class="row">
+                                <ul class="col-12 font-16 text-white-50 list-unstyled">
+                                    <li>(주)크럼스</li>
+                                    <li>서울특별시 강남구 역삼로 114, 8층 828호 (역삼동, 현죽빌딩)</li>
+                                    <li>대표 문유진</li>
+                                    <li>문의 : Hi@crumbs.co.kr</li>
+                                    <li>사업자등록번호: 502-87-01525 | 2019-서울강남-02744</li>
+                                </ul>
+                            </div>  
+                        </div>
+                        <!-- //로고 -->                        
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- //하단 -->
+    </body>
+    <script script src="./../src/bootstrap/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
+    <script type="text/javascript">
+        (function () {
+            document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', function () {
+                document.querySelector('.offcanvas-collapse').classList.toggle('open')
+            })
+        })()
+    </script>
+</html>

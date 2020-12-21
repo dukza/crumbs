@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./../src/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./../src/css/styles.css">
+    <!-- 부트스트랩 -->
+    <link href="./../src/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script script src="./../src/bootstrap/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
+    <title>crumbs</title>
+  </head>
+  <body>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passwordModal">
+        공통_비밀번호 변경완료 팝업
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#docuModal">
+        등기관리/문서함_문서함
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#docuModal04">
+        등기관리/문서함_문서함 – 4
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shareModal">
+        공통_외부로 공유하기 누를경우 팝업
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#payModal02">
+        공통_유료서비스관련 팝업 – 2
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#payModal03">
+        공통_유료서비스관련 팝업 – 3
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerGuide">
+        파트너_업무관리_신규업무_가이드문서
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerGuide01">
+        파트너_업무관리_신규업무_가이드문서 – 1
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shareEmail">
+        이메일 공유 팝업
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminPoint">
+        포인트 관리
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adminRefund">
+        어드민_결제내역_환불팝업
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#partnerInvite">
+        어드민_파트너 신규초대
+    </button>
+    <div class="modal fade" id="passwordModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog mx-auto" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title d-none"></div>
+                <div class="modal-body">
+                    <div class="font-24">
+                        비밀번호가 변경되었습니다.
+                    </div>                            
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-22 bg-brand-violet-main text-white p8-t p8-b p96-l p96-r">로그인하러 가기</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="docuModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title d-none"></div>
+                <div class="modal-body">
+                    <div class="font-18">
+                        등기케어플러스 서비스는 유료 프리미엄 <br>
+                    서비스로 결제 후 이용하실 수 있습니다.
+                    </div>                            
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p8-t p8-b p48-l p48-r">등기케어플러스 확인하러 가기</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog w-664" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title">외부로 공유하기</div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="col-auto font-16 sLabel">
+                                이메일
+                            </div>    
+                            <div class="col p14-r">
+                                <div class="w-100 ">
+                                    <input class="form-control p16-h m8-r" type="email" placeholder="이메일을 입력하세요.">
+                                </div>
+                            </div> 
+                            <div class="col-3">
+                                <button class="btn w-100 p12 font-16 text-ink bg-lighter border-formLight"><i class="fal fa-plus"></i> 추가</button>
+                            </div>                        
+                        </div>                               
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p72-l p72-r">외부로 공유하기</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="payModal02" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title d-none"></div>
+                <div class="col-12 modal-body">
+                    <div class="font-18">
+                        주식수는 자본금을 액면가로 <br> 나눈 수보다 클 수 없습니다.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p112-l p112-r">확인</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="payModal03" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title d-none"></div>
+                <div class="col-12 modal-body">
+                    <div class="font-18">
+                        취소요청이 접수된 건은<br>업무상태변경이 불가능합니다.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p112-l p112-r">확인</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="partnerGuide" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content position-absolute" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title">가이드 문서 리스트</div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <table class="stable p24-h table-striped font-16 align-middle">
+                            <colgroup>
+                                <col width="20%">
+                                <col>
+                            </colgroup>
+                            <tbody> 
+                                <tr>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check form-check-bg mx-auto" type="checkbox" name="" id="guide01">
+                                    </td>
+                                    <td class="text-left">
+                                        <label for="guide01">가이드 문서 1</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check form-check-bg mx-auto" type="checkbox" name="" id="guide02">
+                                    </td>
+                                    <td class="text-left">
+                                        <label for="guide02">가이드 문서 2</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check form-check-bg mx-auto" type="checkbox" name="" id="guide03">
+                                    </td>
+                                    <td class="text-left">
+                                        <label for="guide03">가이드 문서 3</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check form-check-bg mx-auto" type="checkbox" name="" id="guide04">
+                                    </td>
+                                    <td class="text-left">
+                                        <label for="guide04">가이드 문서 4</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check form-check-bg mx-auto" type="checkbox" name="" id="guide05">
+                                    </td>
+                                    <td class="text-left">
+                                        <label for="guide05">가이드 문서 5</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>                         
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p112-l p112-r">선택 완료</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="partnerGuide01" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog w-664" >
+            <div class="modal-content position-absolute" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title">이사 리스트</div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <table class="stable table-striped font-16">
+                            <colgroup>
+                                <col width="20%">
+                                <col width="40%">
+                                <col>
+                            </colgroup>
+                            <thead class="p12-h">
+                                <tr class="">
+                                    <td>선택</td>
+                                    <td>이사명</td>
+                                    <td>소유주식 수</td>
+                                </tr>
+                            </thead>
+                            <tbody class="p10-h"> 
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner01">
+                                    </td>
+                                    <td><label for="partner01">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner02">
+                                    </td>
+                                    <td><label for="partner02">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner03">
+                                    </td>
+                                    <td><label for="partner03">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner04">
+                                    </td>
+                                    <td><label for="partner04">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner05">
+                                    </td>
+                                    <td><label for="partner05">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner06">
+                                    </td>
+                                    <td><label for="partner06">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <input class="form-check form-check-bg d-inline-block" type="checkbox" name="" id="partner07">
+                                    </td>
+                                    <td><label for="partner07">김주주</label></td>
+                                    <td>1,254</td>
+                                </tr>
+                            </tbody>
+                        </table>                         
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p112-l p112-r">선택 완료</button>                             
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="modal fade" id="adminRefund" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title d-none"></div>
+                <div class="col-12 modal-body">
+                    <div class="font-18">
+                        환불처리 하시겠습니까?
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p88-l p88-r">환불처리 하기</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="partnerInvite" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog w-664" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title">파트너 초대하기</div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="col-auto font-16 text-left sLabel">
+                                이메일
+                            </div>    
+                            <div class="col p14-r">
+                                <div class="w-100 ">
+                                    <input class="form-control p16-h m8-r" type="email" placeholder="이메일을 입력하세요.">
+                                </div>
+                            </div> 
+                            <div class="col-3">
+                                <button class="btn w-100 p12 font-16 text-ink bg-lighter border-formLight"><i class="fal fa-plus"></i> 추가</button>
+                            </div>                        
+                        </div>                               
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p72-l p72-r">초대 메일 보내기</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="shareEmail" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog w-664" >
+            <div class="modal-content position-absolute" >
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title position-relative">
+                    이메일 공유
+                </div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    이메일
+                                </div>    
+                                <div class="col p8-r">
+                                    <div class="w-100 ">
+                                        <input class="form-control p16-h m8-r" type="email" placeholder="이메일을 입력하세요.">
+                                    </div>
+                                </div> 
+                                <div class="col-3">
+                                    <button class="btn w-100 p12 font-16 text-ink bg-lighter border-formLight"><i class="fal fa-plus"></i> 추가</button>
+                                </div>                                   
+                            </div>
+                        </div> 
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-start">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    본문
+                                </div>    
+                                <div class="col">
+                                    <div class="w-100 ">
+                                        <textarea class="form-control" name="" id="" cols="30" rows="20"
+                                        placeholder="내용을 입력하세요."
+                                        ></textarea>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p88-l p88-r">이메일 보내기</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="docuModal04" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog w-785" >
+            <div class="modal-content position-absolute" >
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title position-relative">
+                    주주총회 소집 통지하기
+                    <span class="position-absolute btn-right" style="top: 0px;">
+                        <button class="btn btn-sm font-16 text-white bg-brand-violet-main round-6 p12-x ">? HELP</button>
+                        
+                    </span>
+                </div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    이메일
+                                </div>    
+                                <div class="col p8-r">
+                                    <div class="w-100 ">
+                                        <input class="form-control p16-h m8-r" type="email" placeholder="이메일을 입력하세요.">
+                                    </div>
+                                </div> 
+                                <div class="col-3">
+                                    <button class="btn w-100 p12 font-16 text-ink bg-lighter border-formLight"><i class="fal fa-plus"></i> 추가</button>
+                                </div>                                   
+                            </div>
+                        </div> 
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    날짜
+                                </div>    
+                                <div class="col-7">
+                                    <div class="row">
+                                        <div class="col p8-r">
+                                            <div class="w-100 ">
+                                                <select class="form-control form-select-bg p12-h font-16 text-form" name="" id="">
+                                                    <option value="">년도</option>
+                                                    <option value="">2020</option>
+                                                </select>
+                                            </div>
+                                        </div> 
+                                        <div class="col p8-r">
+                                            <div class="w-100 ">
+                                                <select class="form-control form-select-bg p12-h font-16 text-form" name="" id="">
+                                                    <option value="">월</option>
+                                                    <option value="">06</option>
+                                                </select>
+                                            </div>
+                                        </div> 
+                                        <div class="col">
+                                            <div class="w-100 ">
+                                                <select class="form-control form-select-bg p12-h font-16 text-form" name="" id="">
+                                                    <option value="">일</option>
+                                                    <option value="">14</option>
+                                                </select>
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    장소
+                                </div>    
+                                <div class="col">
+                                    <div class="w-100 ">
+                                        <input class="form-control p16-h m8-r" type="text" placeholder="장소를 입력하세요.">
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div> 
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    안건
+                                </div>    
+                                <div class="col p8-r">
+                                    <div class="w-100 ">
+                                        <input class="form-control p16-h m8-r" type="email" placeholder="이메일을 입력하세요.">
+                                    </div>
+                                </div> 
+                                <div class="col-3">
+                                    <button class="btn w-100 p12 font-16 text-ink bg-lighter border-formLight"><i class="fal fa-plus"></i> 추가</button>
+                                </div>                                   
+                            </div>
+                        </div>
+                        <div class="col-12 m14-b">
+                            <div class="row d-flex align-items-start">
+                                <div class="col-auto font-16 text-left sLabel">
+                                    본문
+                                </div>    
+                                <div class="col">
+                                    <div class="w-100 ">
+                                        <textarea class="form-control" name="" id="" cols="30" rows="12"
+                                        placeholder="내용을 입력하세요."
+                                        ></textarea>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn font-16 bg-brand-violet-main text-white p12-t p12-b p96-l p96-r">외부로 공유</button>                             
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="adminPoint" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog w-664" >
+            <div class="modal-content" >
+                <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-title">포인트 관리</div>
+                <div class="col-12 modal-body">
+                    <div class="row">
+                        <div class="col-12 p24-b m36-b border-bottom">
+                            <span class="text-black text-center font-24 font-weight-med md-m56-r">아이디: Username1</span><br class="sm-d-none">
+                            <span class="text-black font-24 font-weight-med">현재 포인트: 25,000 점</span>
+                        </div>
+                        <div class="col-12 d-flex align-items-center m32-b">
+                            <div class="col-auto font-16 sLabel">
+                                포인트 수동 적립
+                            </div>    
+                            <div class="col p14-r">
+                                <div class="w-100 ">
+                                    <input class="form-control p16-h m8-r" type="email" placeholder="지급할 포인트를 입력하세요">
+                                </div>
+                            </div> 
+                            <div class="col-3">
+                                <button class="btn w-100 p12 font-16 text-white bg-brand-violet-main ">저장</button>
+                            </div>                        
+                        </div>  
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="col-auto font-16 sLabel">
+                                포인트 수동 차감
+                            </div>    
+                            <div class="col p14-r">
+                                <div class="w-100 ">
+                                    <input class="form-control p16-h m8-r" type="email" placeholder="차감할 포인트를 입력하세요">
+                                </div>
+                            </div> 
+                            <div class="col-3">
+                                <button class="btn w-100 p12 font-16 text-white bg-brand-violet-main ">저장</button>
+                            </div>                        
+                        </div>                               
+                    </div>
+                </div>
+                <div class="modal-footer">                        
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

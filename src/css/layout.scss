@@ -1,0 +1,408 @@
+@import './short.scss';
+html, body{
+    height: 100vh;
+}
+
+// 팝업
+.sLoginBg{
+    background-color: #fff !important; 
+    transition: all .2s;
+}
+.sLoginWrap{
+    height: 100%;
+}
+.sLogin{
+    width: 320px !important;   
+    padding-top: 85px !important;
+    padding-bottom: 100px !important;            
+} 
+// 폼
+.form-control::placeholder{
+    color: $form !important;
+    font-size: 16px !important;
+}
+.form-48{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+// 모달
+.modal-title .btn-right{
+    right: 0.8em !important;
+}
+.modal-body .sLabel{
+    min-width: 56px;
+    margin-right: 0.8rem;
+}
+// 네비
+#header.navbar{
+    height: 86px;
+}
+#header.navbar-expand-lg .navbar-nav .nav-link{
+    font-size: 1.6rem;
+    color: $black;
+}
+#header .nav-item .nav-link.active{
+    color: $brand-violet-main;
+}
+#header .navbar-toggler{
+    color: $black;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+// 페이징
+.pagination{
+    padding-top: 3.2rem;
+}
+//박스
+.sBox-violet{
+    font-size: 2.4rem;
+    text-align: center;
+    border: 2px solid $brand-violet-main;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sBox-form{
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid $form;
+    border-radius: 1.2rem;
+    background-color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sBox-white{
+    border: 1px solid $border;
+    border-radius: 1.2rem;
+    background-color: white;
+    padding: 2rem 2rem !important;
+}
+.sCircle{
+    width: 12.2rem;
+    height: 12.2rem;
+    border-radius: 50rem;
+    background-color: white;
+    margin-bottom: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .sIcon{
+        font-size:3.2rem !important;
+    }
+}
+.sBtnWrap{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    button{
+        margin-right: 0.4rem;
+    }
+    button:last-child{
+        margin-right: 0rem;
+    }
+}
+// 타이틀
+
+// 레이아웃
+.container {
+    max-width: 1180px !important; 
+}
+.contentTitle-violet{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: $brand-violet-main;
+    .row{
+        align-items: center;
+    }
+    .text{
+        font-size: 31px;
+        font-weight: bolder;
+        text-align: center;
+        color: white;
+    }
+}
+// 타이틀
+.contentTitle-typo{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background-image: url('./../images/bg-FAQ.svg');
+    background-size: 20rem;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    .text{
+        font-size: 31px;
+        font-weight: bolder;
+        text-align: center;
+        color: black;
+    }
+}
+.detailTitle{
+    font-size: 2.4rem;
+    border-bottom: 2px solid $border;
+    padding-top: 4.6rem;
+    padding-bottom: 2.7rem;
+    .text{
+        display: flex;
+        align-items: center;
+    }
+    .btn{
+        width: 40px;
+        margin-right: 0.8rem;
+    }
+}
+.sectionTitle{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    button{
+        margin-left: auto;
+    }
+}
+// 사이드, 탭
+.siderWrap{
+    padding-top: 1.2rem; 
+    .nav-item{
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    .nav-link{
+        font-size: 1.8rem;
+        color: $muted;
+        border-bottom: 1px solid $form;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+    .nav-link.active{
+        color: $brand-violet-main;
+        border-bottom: 2px solid $brand-violet-main;
+    }    
+}
+// 탭
+.sTabWrap{
+    margin-top: 1.4rem !important;
+    .nav-item{
+        display: inline-block;
+    }
+}
+.sTabWrap .nav-link.active, .sTabWrap .show>.nav-link{
+    color: $brand-violet-main !important;
+    border-bottom: 2px solid $brand-violet-main !important;
+}
+.sTabWrap .nav-link {
+    font-size: 1.6rem;
+    color: $black !important;
+    // border-bottom: 1px solid $form !important;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+.sLogin{
+    .sTabWrap .nav-link.active, .sTabWrap .show>.nav-link{
+        font-weight: $font-weight-bolder;
+        color: $black !important;
+        border-bottom: 2px solid $brand-violet-main !important;
+    }
+    .sTabWrap .nav-link {
+        font-size: 1.8rem !important;
+        color: $muted !important;
+        border-bottom: 2px solid $form !important;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }  
+}
+.contentWrap{
+    padding-top: 4.5rem;
+    padding-bottom: 8rem;
+    background-color: $light;
+    min-height: 75vh;
+
+}
+.detailConWrap{
+    min-height: 75vh;
+    background-color: $light;
+}
+// 하단
+footer{
+    background-color: #1A1C20;
+    padding-top: 5.2rem;
+    padding-bottom: 6.4rem;
+}
+
+// 버튼
+.sBtn-light{
+    padding: 0.8rem 1.4rem !important;
+    font-size: 1.4rem;
+    border:1px solid $form !important;
+    background-color: $border;
+    &:hover{
+        background-color: transparentize($black, 0.95);
+    }
+}
+.btn-border-violet-main{
+    font-size: 1.6rem !important;
+    color: $brand-violet-main !important;
+    border:1px solid $brand-violet-main !important;
+    background-color: white;
+    padding:0.8rem 2rem !important;
+}
+.btn-violet-main{
+    font-size: 1.4rem;
+    color: white !important;
+    border:1px solid $brand-violet-main !important;
+    background-color: $brand-violet-main;
+    padding: 0.8rem 2rem !important;
+}
+// 컨텐츠
+// 자주묻는질문
+.sFaq{
+    font-size: 2rem;
+    border: 1px solid $border;
+    border-radius: 2.4rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    .sA{
+        color: $brand-violet-main;        
+        border-top: 1px solid $border;
+    }
+    .sQ{
+        color: black;
+        .text{
+            display: inline-block;
+            margin-right: 1.6rem;   
+        }
+    }
+    .sh{
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        display: flex;
+    }
+    .sBtn-toggle{
+        margin-left:auto;
+    }
+}
+@media (max-width: 992px) {
+    // 네비
+    .offcanvas-collapse {
+        position: fixed;
+        top: 86px; /* Height of navbar */
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: $light;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+    .navbar-nav{
+        margin-top: 1.6rem;
+    }
+}
+/* 웹 */
+@media (min-width: 992px) {
+    .sLoginBg{
+        background-color: $brand-violet-main!important; 
+    }
+    // 팝업
+    .sLoginWrap{
+        min-width: 740px;
+        min-height: 50vh;
+        border-radius: 1rem;
+        margin-top: 55px !important;
+        margin-bottom: 55px !important;  
+        height: auto;
+        box-shadow: 0 5rem 5rem rgba(0, 0, 0, 0.06) !important;        
+    }
+    .sLogin{
+        width: 380px !important;            
+    } 
+    // 모달
+    .modal-title .btn-right{
+        right: 3em !important;
+    }
+    // 사이즈
+    .w-664{
+        max-width: 664px !important;
+    }
+    .w-785{
+        max-width: 785px !important;
+    }    
+    // 네비
+    #header .navbar-brand{
+        padding-right: 3rem;
+    }
+    #header.navbar-expand-lg .navbar-nav .nav-link{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    // 레이아웃
+    // 타이틀
+    .contentTitle-violet{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .contentTitle-typo{
+        padding-top: 15rem;
+        padding-bottom: 6rem;
+        background-size: 30rem;
+        background-position: center 110px;
+    }
+    .detailTitle{
+        padding-top: 2.4rem;
+        padding-bottom: 1.4rem;
+    }
+    .sectionTitle{
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+
+    }
+    // 사이드, 탭
+    .siderWrap{
+        padding-top: 6rem;
+        text-align: right;
+        flex-direction: column;
+        .nav-item{
+            text-align: right;
+        }
+        .nav-link:first-child{
+            padding-top: 0rem;
+        }       
+        .nav-link{
+            font-size: 1.8rem;
+            color: $muted;
+            border-bottom: 2px solid $form;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            margin-bottom: 4rem;
+        }
+        .nav-link.active{
+            color: $brand-violet-main;
+            border-bottom: 2px solid $brand-violet-main;
+        }    
+    }
+    .contentWrap{
+        padding-top: 6rem;
+        padding-bottom: 16rem;
+    }
+    .contentWrap-bottom{
+        padding-bottom: 16rem;
+    }
+    // 박스
+    .sBox-white{
+        padding: 4rem 6rem !important;
+    }
+    .sFaq{
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+}

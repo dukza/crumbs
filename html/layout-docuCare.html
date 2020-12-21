@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- 스타일시트 -->
+        <link rel="stylesheet" href="./../src/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="./../src/css/styles.css">
+        <!-- 부트스트랩 -->
+        <link href="./../src/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+        </style>
+        <title>crumbs</title>
+    </head>
+    <body>
+        <!-- 네비 -->
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg" aria-label="Main navigation" id="header">
+                    <!-- 로고 -->
+                    <a class="text-brand-violet-main text-center text-decoration-none navbar-brand" href="#">
+                    <span class="icon-logo font-20 m24-b" title="Crumbs"></span>
+                    </a>  
+                    <!-- 로고 -->
+                    <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+                        <i class="fal fa-bars font-24"></i>
+                    </button>
+                    <div class="navbar-collapse offcanvas-collapse">
+                        <ul class="navbar-nav nav me-auto mb-2 mb-lg-0" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" role="tab" aria-controls="docuCare" aria-selected="true"  id="docuCare-" data-bs-toggle="tab" href="#docuCare">등기케어</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#docuCarePlus">등기케어플러스</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#">이용안내/요금</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab"  href="#faq">자주하는 질문</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" role="tab" aria-controls="myPage" aria-selected="false"  id="myPage-" data-bs-toggle="tab" href="#myPage">마이페이지</a>
+                            </li>
+                        </ul>
+                        <a class="btn text-black font-14 bg-lighter-hover border p4-t p4-b p20-x" role="button">로그인</a>
+                        <a class="btn text-white font-14 bg-brand-violet-main p4-t p4-b p20-x m8-l" role="button">Partner</a>
+                    </div>
+                    <div class="col-12 nav position-absolute" style="top:0px">
+                        <a class="nav-link" role="tab" aria-controls="docuProcessDetail" aria-selected="false"  id="docuProcessDetail-" data-bs-toggle="tab" href="#docuProcessDetail" >등기관리/문서함_등기진행현황_상세페이지</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-01-" data-bs-toggle="tab" href="#docuBox-01">등기관리/문서함_문서함 – 1</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-01-" data-bs-toggle="tab" href="#docuBox-01">등기관리/문서함_문서함 – 1</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-02-" data-bs-toggle="tab" href="#docuBox-02">등기관리/문서함_문서함 – 2</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-03-" data-bs-toggle="tab" href="#docuBox-03">등기관리/문서함_문서함 – 3</a>
+                        
+                    </div>
+                </nav>
+            </div>
+        </div>  
+        <!-- 네비 -->
+        <div class="container-fluid ">
+            <div class="row tab-content">
+                <div class="col-12 tab-pane " aria-labelledby="docuCare-" role="tabpanel" id="docuCare">
+                    <div class="row">
+                        <!-- 페이지 타이틀 -->
+                        <div class="col-12 contentTitle-violet">
+                            <div class="row">
+                                <span class="text">
+                                    등기케어
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //페이지 타이틀 -->
+                        <!-- 컨텐츠 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!-- 사이더 -->
+                                <div class="col-12 col-lg-2">
+                                    <div class="row">
+                                        <div class="col ">
+                                            <div class="row">
+                                                <ul class="nav col-lg-auto lg-ml-auto m0-r md-m40-r siderWrap">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-bs-toggle="tab" href="#docuApply">등기신청</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#docuProcess">등기진행 현황</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link " data-bs-toggle="tab" href="#docuSave">임시문서 저장</a>
+                                                    </li>
+                                                </ul>                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //사이더 -->
+                                <!-- 컨텐트 -->
+                                <div class="col-12 col-lg contentWrap">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row tab-content">
+                                                    <div class="col-12 tab-pane active" id="docuApply">
+                                                        <div class="row">
+                                                            <div class="col-12 font-18 p32-b">
+                                                                설립 등기 신청
+                                                            </div>
+                                                            <div class="col-12 p48-b">
+                                                                <div class="row">
+                                                                    <div class="col-12 d-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, auto));grid-auto-rows: minmax(120px, auto);gap: 20px;">
+                                                                        <div class="sBox-violet">설립 등기</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 font-18 p32-t p32-b ">
+                                                                변경 등기 신청
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-12 d-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, auto));grid-auto-rows: minmax(120px, auto);gap: 20px;">
+                                                                        <div class="sBox-violet">본점이전</div>
+                                                                        <div class="sBox-violet">임원변경</div>
+                                                                        <div class="sBox-violet">증자</div>
+                                                                        <div class="sBox-violet">목적변경</div>
+                                                                        <div class="sBox-violet">스톡옵션</div>
+                                                                        <div class="sBox-violet">지점등기<br>
+                                                                            (설치/폐지/이전)
+                                                                        </div>
+                                                                        <div class="sBox-violet">상호변경</div>
+                                                                        <div class="sBox-violet">해산 및 청산인 선임</div>
+                                                                        <div class="sBox-violet">청산 종결</div>
+                                                                        <div class="sBox-violet">감자</div>
+                                                                        <div class="sBox-violet">발행예정주식<br> 총수변경</div>
+                                                                        <div class="sBox-violet">공고방법변경</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 tab-pane " id="docuProcess">
+                                                        <div class="row">
+                                                            <!-- 테이블 -->
+                                                            <div class="col-12">
+                                                                <div class="row d-grid overflow-x-auto" style="row-gap:14px;">
+                                                                    <!-- head -->
+                                                                    <div class="col-12 font-14 text-muted text-center word-keep d-grid align-items-center"  style="grid-template-columns:50px 140px 130px 1fr 1fr 1fr 260px">
+                                                                        <div></div>
+                                                                        <div class="p8-x">등기유형</div>
+                                                                        <div class="p8-x">신청일</div>
+                                                                        <div class="p8-x">
+                                                                            업무상태
+                                                                        </div>
+                                                                        <div class="p8-x">
+                                                                            결제상태
+                                                                        </div>
+                                                                        <div class="p8-x">
+                                                                            결제액
+                                                                        </div>
+                                                                        <div class="sBtnWrap p8-x">                                   
+                                                                        </div>
+                                                                    </div>  
+                                                                    <!-- 1 -->
+                                                                    <div class="col-12 font-14 text-center word-keep bg-white round-6 border p16-h d-grid align-items-center"  style="grid-template-columns:50px 140px 130px 1fr 1fr 1fr 260px">
+                                                                        <div></div>
+                                                                        <div class="font-18 p8-x">본점이전 등기 1</div>
+                                                                        <div class="p8-x">2020.07.08 신청</div>
+                                                                        <div class="font-weight-bolder p8-x">
+                                                                            접수완료 
+                                                                        </div>
+                                                                        <div class="font-weight-bolder p8-x">
+                                                                            결제대기 
+                                                                        </div>
+                                                                        <div class="p8-x">
+                                                                            117,120 
+                                                                        </div>
+                                                                        <div class="sBtnWrap p8-x">
+                                                                            <button class="sBtn sBtn-light">취소요청</button>
+                                                                            <button class="sBtn sBtn-light">수정</button>
+                                                                            <button class="sBtn sBtn-light">다운로드이동</button>                                          
+                                                                        </div>
+                                                                    </div>  
+                                                                    <!-- 2 -->
+                                                                    <div class="col-12 font-14 text-center word-keep bg-white round-6 border p16-h d-grid align-items-center"  style="grid-template-columns:50px 140px 130px 1fr 1fr 1fr 260px">
+                                                                        <div></div>
+                                                                        <div class="font-18 p8-x">증자 등기 1</div>
+                                                                        <div class="p8-x">2020.07.08 신청</div>
+                                                                        <div class="text-muted font-weight-bolder p8-x">
+                                                                            취소 
+                                                                        </div>
+                                                                        <div class="font-weight-bolder p8-x">
+                                                                            결제대기 
+                                                                        </div>
+                                                                        <div class="p8-x">
+                                                                            117,120 
+                                                                        </div>
+                                                                        <div class="sBtnWrap p8-x">
+                                                                            <button class="sBtn sBtn-light">취소요청</button>
+                                                                            <button class="sBtn sBtn-light">수정</button>
+                                                                            <button class="sBtn sBtn-light">다운로드이동</button>                                          
+                                                                        </div>
+                                                                    </div>                                                 
+                                                                </div>
+
+                                                            </div>
+                                                            <!-- //테이블 -->
+                                                            <!-- 페이징 -->
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-auto mx-auto pagination">
+                                                                        <a class="btn font-16 " role="button"><i class="fal fa-angle-left"></i></a> 
+                                                                        <a class="btn font-16 active" role="button">1</a>
+                                                                        <a class="btn font-16" role="button">2</a>
+                                                                        <a class="btn font-16" role="button">3</a>
+                                                                        <a class="btn font-16" role="button">4</a>
+                                                                        <a class="btn font-16" role="button">5</a>
+                                                                        <a class="btn font-16 " role="button"><i class="fal fa-angle-right"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- //페이징 -->
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-12 tab-pane " id="docuSave">
+                                                        <div class="row">
+                                                            <!-- 테이블 -->
+                                                            <div class="col-12">
+                                                                <div class="row d-grid overflow-x-auto" style="row-gap:14px;">
+                                                                    <!-- head -->
+                                                                    <div class="col-12 font-14 text-muted text-center word-keep d-grid align-items-center"  style="grid-template-columns:50px 140px 130px auto">
+                                                                        <div></div>
+                                                                        <div class="p8-x">등기유형</div>
+                                                                        <div class="p8-x">작성일</div>
+                                                                        <div class="sBtnWrap p8-x">                                   
+                                                                        </div>
+                                                                    </div>  
+                                                                    <!-- 1 -->
+                                                                    <div class="col-12 font-14 text-center word-keep bg-white round-6 border p16-h d-grid align-items-center"  style="grid-template-columns:50px 140px 130px auto">
+                                                                        <div></div>
+                                                                        <div class="font-18 p8-x">본점이전 등기 1</div>
+                                                                        <div class="p8-x">2020.07.08 작성</div>
+                                                                        <div class="p8-x sBtnWrap">
+                                                                            <button class="sBtn sBtn-light">수정</button>
+                                                                            <button class="sBtn sBtn-light">삭제</button>      
+                                                                        </div>
+                                                                    </div>  
+                                                                    <!-- 2 -->
+                                                                    <div class="col-12 font-14 text-center word-keep bg-white round-6 border p16-h d-grid align-items-center"  style="grid-template-columns:50px 140px 130px auto">
+                                                                        <div></div>
+                                                                        <div class="font-18 p8-x">본점이전 등기 1</div>
+                                                                        <div class="p8-x">2020.07.08 작성</div>
+                                                                        <div class="p8-x sBtnWrap">
+                                                                            <button class="sBtn sBtn-light">수정</button>
+                                                                            <button class="sBtn sBtn-light">삭제</button>    
+                                                                        </div>
+                                                                    </div> 
+                                                                </div>   
+
+                                                            </div>
+                                                            <!-- //테이블 -->
+                                                        </div>
+                                                    </div>                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 컨텐트 -->
+                            </div>
+                        </div>
+                        <!-- //컨텐츠 -->                            
+                    </div>
+                </div>
+                <div class="col-12 tab-pane " id="docuCarePlus">
+                    <div class="row">
+                        <!-- 페이지 타이틀 -->
+                        <div class="col-12 contentTitle-violet">
+                            <div class="row">
+                                <span class="text">
+                                    등기케어 플러스
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //페이지 타이틀 -->
+                        <div class="col-12 bg-white contentWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 d-grid" style="grid-template-columns: repeat(auto-fill, minmax(276px, auto));grid-auto-rows: minmax(253px, auto);gap: 20px;">
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-list sIcon"></span>
+                                                        </div>
+                                                        활동 이력
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-document-list sIcon"></span>
+                                                        </div>
+                                                        주주 명부
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-box sIcon"></span>
+                                                        </div>
+                                                        파일 박스
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-paper sIcon"></span>
+                                                        </div>
+                                                        개정정관 작성
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-stock sIcon"></span>
+                                                        </div>
+                                                        주식양수도 계약서
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-documents sIcon"></span>
+                                                        </div>
+                                                        영수증 / 의사록 / 등기부등본
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-contract sIcon"></span>
+                                                        </div>
+                                                        주권미발행확인서
+                                                    </div>
+                                                    <div class="sBox-form hover-brand-violet-main">
+                                                        <div class="sCircle">
+                                                            <span class="icon-icon-partners sIcon"></span>
+                                                        </div>
+                                                        주주총회소집통지서
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane" id="faq">
+                    <div class="row">
+                        <!-- 페이지 타이틀 -->
+                        <div class="col-12 contentTitle-typo">
+                            <div class="row">
+                                <span class="text">
+                                    자주 묻는 질문
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //페이지 타이틀 -->
+                        <div class="container bg-white contentWrap">
+                            <div class="row">
+                                <div class="col-12 sFaq">
+                                    <div class="row">
+
+                                        <div class="col-12 sQ sh">
+                                            <span class="text">
+                                                Q.  비대면 등기케어 서비스는 무엇인가요?
+                                            </span>
+                                            <span class="sBtn-toggle">
+                                                <i class="fal fa-minus"></i>
+                                                <!-- <i class="fal fa-plus"></i> -->
+                                            </span>
+                                        </div>
+                                        <div class="col-12 sA sh">
+                                            A.  등기 데이터를 한곳에서 관리하고 비대면으로 등기 진행도 가능한 온라인 플랫폼 서비스 입니다. 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-12 tab-pane " aria-labelledby="myPage-" role="tabpanel" id="myPage">
+                    <div class="row">
+                        <!-- 페이지 타이틀 -->
+                        <div class="col-12 contentTitle-violet">
+                            <div class="row">
+                                <span class="text">
+                                    마이페이지
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //페이지 타이틀 -->
+                        <div class="col-12 bg-white border-bottom">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row overflow-x-auto">
+                                        <div class="col-11 mx-auto">
+                                            <div class="row">
+                                                <!-- 탭 -->
+                                                <ul class="col-12 nav nav-fill flex-nowrap  sTabWrap">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link word-keep active" data-bs-toggle="tab" href="#docuApply">계정정보관리</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link word-keep" data-bs-toggle="tab" href="#docuProcess">계정정보관리</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link word-keep " data-bs-toggle="tab" href="#docuSave">임원정보관리</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link word-keep " data-bs-toggle="tab" href="#docuSave">세무대리인</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link word-keep " data-bs-toggle="tab" href="#docuSave">임원정보관리</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link word-keep " data-bs-toggle="tab" href="#docuSave">임원정보관리</a>
+                                                    </li>
+                                                <!-- 탭 -->
+                                                <!-- 탭 -->
+                                                </ul>
+                                                <!-- //탭 -->
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> 
+                        <div class="col-12 contentWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row overflow-x-auto">
+                                        <div class="col-11 mx-auto">
+                                            <div class="row">
+                                                <div class="col-12 sBox-white">
+                                                    1
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>                
+                    </div>
+                </div>
+                <div class="col-12 tab-pane" aria-labelledby="docuProcessDetail-" role="tabpanel" id="docuProcessDetail" >
+                    <div class="row">
+                        <!-- 페이지 타이틀 -->
+
+                        <!-- //페이지 타이틀 -->
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row">
+                                                <span class="text">
+                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
+                                                     등기진행 현황
+                                                </span>
+                                            </div>
+                                        </div>                            
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12 sBox-white">
+                                                    <div class="row">
+                                                        <div class="col-12 m20-b">
+                                                            <span class="font-24 m16-r">본점이전 등기</span><span class="font-18 font-weight-bolder text-brand-violet-main">등기완료</span>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span class="font-16">2020.07.08 의뢰</span><span class="font-16 text-border m16-x">|</span><span class="font-16">고객상호명</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane" role="tabpanel" id="docuBox-01" aria-labelledby="docuBox-01-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row">
+                                                <span class="text">
+                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
+                                                     활동 이력
+                                                </span>
+                                            </div>
+                                        </div>                            
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12 sectionTitle">
+                                                    발송 이력 리스트
+                                                </div>
+                                                <div class="col-12 overflow-x-auto">
+                                                    <div class="row overflow-x-auto">
+                                                        <table class="col-12 stable table-striped font-16 word-keep white-nowrap bg-white"  >
+                                                            <colgroup>
+                                                                <col width="40%">
+                                                                <col >
+                                                                <col width="20%">
+                                                                <col width="20%">
+                                                            </colgroup>
+                                                            <thead class="p12-h">
+                                                                <tr class="">
+                                                                    <td class="text-center">제목</td>
+                                                                    <td class="text-center">발송일</td>
+                                                                    <td class="text-center">수신자</td>
+                                                                    <td class="text-center">재전송</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="p10-h"> 
+                                                                <tr>
+                                                                    <td>
+                                                                        리스트 타이틀 입니다
+                                                                    </td>
+                                                                    <td class="text-center">2020-07-31</td>
+                                                                    <td class="text-center">user@gmail.com</td>
+                                                                    <td class="text-center">
+                                                                        <button class="sBtn sBtn-light">재전송</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane " role="tabpanel" id="docuBox-02" aria-labelledby="docuBox-02-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row">
+                                                <span class="text">
+                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
+                                                    발송 이력 리스트
+                                                </span>
+                                            </div>
+                                        </div>                            
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row overflow-x-auto">
+                                                        <div class="col-12 font-16 sBox-white">
+                                                            <div class="row">
+                                                                <div class="col-12 font-24 p24-b m24-b border-bottom-border d-flex align-items-center">
+                                                                    리스트 제목입니다.
+                                                                    <button class="sBtn sBtn-light ml-auto">재전송</button>
+                                                                </div>
+                                                                <div class="col-12 font-16 p16-b d-flex align-items-center">
+                                                                    <span class="text-overflow-ellipsis" style="width: 60vh;">
+                                                                        수신자:  useruser@gmail.com, useruser@gmail.com, useruser@gmail.com  
+                                                                    </span>
+                                                                    <span class="word-keep text-brand-violet-main text-decoration-underline m8-l ">더보기</span> 
+                                                                </div>
+                                                                <div class="col-12 p28-b m28-b border-bottom-border">발송시간:  2020-05-08  16:00</div>
+                                                                <div class="col-12 p16-b">
+                                                                    첨부파일 1건
+                                                                </div>
+                                                                <div class="col-12 font-18 bg-lighter p20-h p40-x d-flex align-items-center">
+                                                                    첨부파일. pdf<span class="font-18 text-brand-violet-main text-decoration-underline ml-auto">다운로드</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane active" role="tabpanel" id="docuBox-03" aria-labelledby="docuBox-03-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row">
+                                                <span class="text">
+                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
+                                                     주주 명부
+                                                </span>
+                                            </div>
+                                        </div>                            
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12 sectionTitle">
+                                                    주주 명부 리스트
+                                                    <button class="btn btn-border-violet-main">추가하기</button>
+                                                </div>
+                                                <div class="col-12 overflow-x-auto">
+                                                    <div class="row overflow-x-auto">
+                                                        <table class="col-12 stable table-striped font-16 word-keep white-nowrap bg-white"  >
+                                                            <colgroup>
+                                                                <col width="40%">
+                                                                <col >
+                                                                <col width="20%">
+                                                            </colgroup>
+                                                            <thead class="p12-h">
+                                                                <tr class="">
+                                                                    <td class="text-center">제목</td>
+                                                                    <td class="text-center">저장일</td>
+                                                                    <td class="text-center">공유</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="p10-h"> 
+                                                                <tr>
+                                                                    <td>
+                                                                        리스트 타이틀 입니다
+                                                                    </td>
+                                                                    <td class="text-center">2020-07-31</td>
+
+                                                                    <td class="text-center">
+                                                                        <button class="sBtn btn-violet-main">외부로 공유</button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 하단 -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <!-- 로고 -->
+                        <div class="col-12 col-md-6 m48-b lg-m0-b">
+                            <div class="row">
+                                <div class="col-12 col-lg-auto icon-logo text-brand-violet-light font-20 m28-r m8-b lg-m0-b" title="Crumbs"></div>
+                                <div class="col-12 col-lg-auto font-16 text-white-50">
+                                    © 2019 Crumbs Inc. All Rights Reserved
+                                </div>                                 
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-auto ml-auto">
+                            <div class="row">
+                                <ul class="col-12 font-16 text-white-50 list-unstyled">
+                                    <li>(주)크럼스</li>
+                                    <li>서울특별시 강남구 역삼로 114, 8층 828호 (역삼동, 현죽빌딩)</li>
+                                    <li>대표 문유진</li>
+                                    <li>문의 : Hi@crumbs.co.kr</li>
+                                    <li>사업자등록번호: 502-87-01525 | 2019-서울강남-02744</li>
+                                </ul>
+                            </div>  
+                        </div>
+                        <!-- //로고 -->                        
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- //하단 -->
+    </body>
+    <script script src="./../src/bootstrap/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
+    <script type="text/javascript">
+        (function () {
+            document.querySelector('[data-bs-toggle="offcanvas"]').addEventListener('click', function () {
+                document.querySelector('.offcanvas-collapse').classList.toggle('open')
+            })
+        })()
+    </script>
+</html>

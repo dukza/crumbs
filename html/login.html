@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./../src/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./../src/css/styles.css">
+    <!-- 부트스트랩 -->
+    <link href="./../src/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script script src="./../src/bootstrap/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
+    <title>crumbs</title>
+  </head>
+  <body>
+    <div class="container-fluid h-100 pLogin">
+        <div class="row h-100 align-items-center justify-content-center sLoginBg">
+            <div class="col-12 sLoginBg">
+                <div class="row">
+                    <div class="col-12 col-lg-5 mx-auto bg-white sLoginWrap">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-auto sLogin">
+                                <div class="row">
+                                    <!-- 로고 -->
+                                    <!-- <div class="col-12  text-brand-violet-main text-center"><span class="icon-logo font-28" title="Crumbs"></span></div>   -->
+                                    <!-- 로고 -->
+                                    <!-- 로고 -->
+                                    <div class="col-12  text-brand-violet-main text-center">
+                                        <div class="icon-logo font-38 m24-b" title="Crumbs"></div>
+                                        <!-- 어드민 로고-->
+                                        <!-- <div class="icon-logo-admin font-28"></div> -->
+                                    </div>  
+                                    <!-- 로고 -->
+                                    <div class="col-12">
+                                        <!-- 타입3_로그인 -->
+                                        <!-- <div class="row">
+                                            <div class="m72-b"></div> 
+                                            <div class="col-12 m24-b">
+                                                <div class="col-12 border-bottom-muted">
+                                                    <input class="form-control border-0 p16-h" type="text" placeholder="아이디를 입력해주세요.">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 m48-b">
+                                                <div class="col-12 border-bottom-muted">
+                                                        <input class="form-control border-0 p16-h" type="password" placeholder="비밀번호를 입력해주세요.">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 m8-b">
+                                                <button class="btn w-100 p14 font-18 font-weight-bolder text-white bg-brand-violet-main">로그인</button>
+                                            </div>
+                                            <div class="col-12 m40-b">
+                                                <button class="btn w-100 p14 font-18 font-weight-med text-mute bg-border">회원가입</button>
+                                            </div>   
+                                            <div class="col-auto mx-auto ">
+                                                <a class="font-14 text-black text-decoration-none cursor-pointer">아이디/비밀번호 찾기</a>
+                                            </div>  
+                                        </div> -->
+                                        <!-- //타입3_로그인 -->
+                                        <!-- 타입3_ 회원가입 – 1 -->
+                                        <!-- <div class="row">
+                                            <div class="m36-b"></div>
+                                            <div class="col-12">
+                                                <div class="col-12 border-bottom-muted m24-b">
+                                                    <input class="form-control border-0 p16-h" type="text" placeholder="아이디를 입력해주세요.">
+                                                </div>
+                                                <div class="col-12 d-flex m24-b">
+                                                    <div class="col-8 p14-r">
+                                                        <div class="w-100 border-bottom-muted">
+                                                            <input class="form-control border-0 p16-h m8-r" type="tel" placeholder="000-0000-0000">
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-4 align-items-end">
+                                                        <button class="btn w-100 p10 font-18 text-ink bg-border border-formLight">인증하기</button>
+                                                    </div>                        
+                                                </div>
+                                                <div class="col-12 d-flex m24-b">
+                                                    <div class="col-8 p14-r">
+                                                        <div class="w-100 border-bottom-muted">
+                                                            <input class="form-control border-0 p16-h m8-r" type="text" placeholder="인증번호 입력">
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-4 align-items-end">
+                                                        <button class="btn w-100 p10 font-18 text-ink bg-border border-formLight">인증확인</button>
+                                                    </div>                        
+                                                </div>
+                                                <div class="col-12 border-bottom-muted m24-b">
+                                                    <input class="form-control border-0 p16-h" type="password" placeholder="8자 이상 영문 대/소문자, 숫자 포함">
+                                                </div>
+                                                <div class="col-12 border-bottom-muted m24-b">
+                                                    <input class="form-control border-0 p16-h" type="password" placeholder="비밀번호 확인">
+                                                </div>
+                                                <div class="col-12 border-bottom-muted m40-b">
+                                                    <input class="form-control border-0 p16-h" type="text" placeholder="추천인 코드 입력">
+                                                </div>
+                                                <div class="col-12 font-14 font-weight-bolder text-ink p4-l p2-t p2-b">약관동의</div>
+                                                <div class="border-bottom p16-h p20-l m10-b d-flex align-items-center">
+                                                    <input class="form-check form-check-bg m8-r" type="checkbox" name="" id="agree"> <span class="font-17 font-weight-med text-black d-inline-block m1-l">
+                                                        <label for="agree">전체 동의</label>  
+                                                    </span>
+                                                </div>
+                                                <div class="p10-t p10-b p20-l d-flex align-items-center">
+                                                    <input class="form-check form-check-bg m8-r" type="checkbox" name="" id=""> <a class="font-14 text-black d-inline-block m1-l">이용약관 (필수)</a>
+                                                </div>
+                                                <div class="p10-t p10-b p20-l d-flex align-items-center">
+                                                    <input class="form-check form-check-bg m8-r" type="checkbox" name="" id=""> <a class="font-14 text-black d-inline-block m1-l">개인정보취급방침 (필수)</a>
+                                                </div>
+                                                <div class="p10-t p10-b p20-l m32-b d-flex align-items-center">
+                                                    <input class="form-check form-check-bg m8-r" type="checkbox" name="" id=""> <a class="font-14 text-black text-decoration-none d-inline-block m1-l">이벤트, 프로모션 알림 메일 및 SMS 수신 (선택)</a>
+                                                </div>
+                                                <div class="col-12 m24-b">
+                                                    <button class="btn w-100 p14 font-18 font-weight-bolder text-white bg-brand-violet-main">회원가입</button>
+                                                </div>
+                                                <div class="col-12 font-14 text-center">
+                                                    이미 아이디가 있으신가요? 
+                                                    <a class="font-14 text-black font-weight-bolder cursor-pointer m24-l">로그인</a>
+                                                </div>
+                                            </div> 
+                                        </div> -->
+                                        <!-- //타입3_ 회원가입 – 1 -->
+                                        <!-- 타입3_아이디 찾기 – 2 -->
+                                        <!-- <div class="row ">
+                                            <div class="col-12">
+                                                <div class="col-12 font-22 font-weight-bold text-center m40-b">
+                                                    아이디<span class="font-num">/</span>비밀번호 찾기
+                                                </div>
+                                                <ul class="w-100 nav sTabWrap nav-fill p-0" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link active" id="idFind-tab" data-bs-toggle="tab" href="#idFind" role="tab" aria-controls="idFind" aria-selected="true">아이디찾기</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" id="passwordFind-tab" data-bs-toggle="tab" href="#passwordFind" role="tab" aria-controls="passwordFind" aria-selected="false">비밀번호찾기</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 tab-content" id="myTabContent" >
+                                                <div class="col-12 tab-pane fade show active " id="idFind" role="tabpanel" aria-labelledby="idFind-tab" >
+                                                    <div class="row" >
+                                                        <div class="col-12 d-flex align-items-center" style="min-height: 320px;">
+                                                            <div class="row">
+                                                                <div class="col-12 d-flex m24-b">
+                                                                    <div class="col-8 p14-r">
+                                                                        <div class="w-100 border-bottom-muted">
+                                                                            <input class="form-control border-0 p16-h m8-r" type="tel" placeholder="000-0000-0000">
+                                                                        </div>
+                                                                    </div> 
+                                                                    <div class="col-4 align-items-end">
+                                                                        <button class="btn w-100 p10 font-18 text-ink bg-border border-formLight">인증하기</button>
+                                                                    </div>                        
+                                                                </div>
+                                                                <div class="col-12 d-flex m24-b">
+                                                                    <div class="col-8 p14-r">
+                                                                        <div class="w-100 border-bottom-muted">
+                                                                            <input class="form-control border-0 p16-h m8-r" type="text" placeholder="인증번호 입력">
+                                                                        </div>
+                                                                    </div> 
+                                                                    <div class="col-4 align-items-end">
+                                                                        <button class="btn w-100 p10 font-18 text-ink bg-border border-formLight">인증확인</button>
+                                                                    </div>                        
+                                                                </div>                                                                          
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button class="btn w-100 p14 font-18 font-weight-bolder text-white bg-brand-violet-main">아이디 찾기</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 tab-pane fade" id="passwordFind" role="tabpanel" aria-labelledby="passwordFind-tab">
+                                                    <div class="m40-b"></div>
+                                                    <div class="col-12 border-bottom-muted m24-b">
+                                                        <input class="form-control border-0 p16-h" type="text" placeholder="아이디를 입력해주세요.">
+                                                    </div>
+                                                    <div class="col-12 d-flex m24-b">
+                                                        <div class="col-8 p14-r">
+                                                            <div class="w-100 border-bottom-muted">
+                                                                <input class="form-control border-0 p16-h m8-r" type="tel" placeholder="000-0000-0000">
+                                                        </div>
+                                                        </div> 
+                                                        <div class="col-4 align-items-end">
+                                                            <button class="btn w-100 p10 font-18 text-ink bg-border border-formLight">인증하기</button>
+                                                        </div>                        
+                                                    </div>
+                                                    <div class="col-12 d-flex m24-b">
+                                                        <div class="col-8 p14-r">
+                                                            <div class="w-100 border-bottom-muted">
+                                                                <input class="form-control border-0 p16-h m8-r" type="text" placeholder="인증번호 입력">
+                                                            </div>
+                                                        </div> 
+                                                        <div class="col-4 align-items-end">
+                                                            <button class="btn w-100 p10 font-18 text-ink bg-border border-formLight">인증확인</button>
+                                                        </div>                        
+                                                    </div>
+                                                    <div class="col-12 border-bottom-muted m24-b">
+                                                        <input class="form-control border-0 p16-h" type="password" placeholder="신규 비밀번호 입력">
+                                                    </div>
+                                                    <div class="col-12 border-bottom-muted m56-b">
+                                                        <input class="form-control border-0 p16-h" type="password" placeholder="신규 비밀번호 재입력">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button class="btn w-100 p14 font-18 font-weight-bolder text-white bg-brand-violet-main">변경하기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- //타입3_아이디 찾기 – 2 -->
+                                        <!-- 타입3_아이디찾기3 -->
+                                        <div class="row ">
+                                            <div class="col-12">
+                                                <div class="col-12 font-22 font-weight-bold text-center m40-b">
+                                                    아이디<span class="font-num">/</span>비밀번호 찾기
+                                                </div>
+                                                <ul class="w-100 nav sTabWrap nav-fill p-0" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link active" id="idFind-tab" data-bs-toggle="tab" href="#idFind" role="tab" aria-controls="idFind" aria-selected="true">아이디찾기</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" id="passwordFind-tab" data-bs-toggle="tab" href="#passwordFind" role="tab" aria-controls="passwordFind" aria-selected="false">비밀번호찾기</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 font-22 font-weight-bolder text-center d-flex align-items-center" style="min-height: 320px;">
+                                                <div class="position-absolute" style="left: 50%;margin-left: -200px;">
+                                                고객님의 아이디는 <span class="font24 font-weight-normal d-inline-block m40-x">Username1</span> 입니다.
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn w-100 p14 font-18 font-weight-bolder text-white bg-brand-violet-main">로그인하러 가기</button>
+                                            </div>
+                                        </div>
+                                        <!-- //타입3_아이디찾기3 -->
+                                        <!-- 어드민_로그인 -->
+                                        <!-- <div class="row ">
+                                            <div class="col-12 font-22 font-weight-bolder text-center d-flex align-items-center " style="min-height: 320px;">
+                                                <div class="col-12">
+                                                    <div class="col-12 m24-b">
+                                                        <div class="col-12 border-bottom-muted">
+                                                            <input class="form-control border-0 p16-h" type="text" placeholder="아이디를 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col
+                                                    -12 m48-b">
+                                                        <div class="col-12 border-bottom-muted">
+                                                            <input class="form-control border-0 p16-h" type="password" placeholder="비밀번호를 입력해주세요.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn w-100 p14 font-18 font-weight-bolder text-white bg-brand-violet-main">로그인</button>
+                                            </div>                    
+                                        </div> -->
+                                        <!-- //어드민_로그인 -->
+                                    </div>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                    
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
