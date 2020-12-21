@@ -211,18 +211,18 @@ html, body {
   padding-bottom: 2.7rem;
 }
 
-.detailTitle .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.detailTitle .btn-left {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-right: .8rem;
 }
 
-.detailTitle .btn {
-  width: 40px;
-  margin-right: 0.8rem;
+.detailTitle .btn-left i {
+  font-size: 3.2rem !important;
+}
+
+.detailTitle .btn-left:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .sectionTitle {
@@ -316,11 +316,24 @@ footer {
   padding-bottom: 6.4rem;
 }
 
+.btn {
+  width: auto !important;
+}
+
+.btn-mutedLighter {
+  border: 1px solid #C5C5C5 !important;
+  background-color: #C5C5C5 !important;
+  padding: 0.8rem 2rem !important;
+}
+
+.btn-mutedLighter:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .sBtn-light {
-  padding: 0.8rem 1.4rem !important;
-  font-size: 1.4rem;
   border: 1px solid #DBDBDB !important;
-  background-color: #EFEFEF;
+  background-color: #EFEFEF !important;
+  padding: 0.8rem 2rem !important;
 }
 
 .sBtn-light:hover {
@@ -328,19 +341,25 @@ footer {
 }
 
 .btn-border-violet-main {
-  font-size: 1.6rem !important;
   color: #7900F2 !important;
   border: 1px solid #7900F2 !important;
   background-color: white;
-  padding: 0.8rem 2rem !important;
 }
 
 .btn-violet-main {
-  font-size: 1.4rem;
   color: white !important;
   border: 1px solid #7900F2 !important;
-  background-color: #7900F2;
+  background-color: #7900F2 !important;
   padding: 0.8rem 2rem !important;
+}
+
+.btn-right {
+  top: 1rem;
+  right: 1rem;
+  width: 2rem !important;
+  position: absolute;
+  display: inline-block;
+  padding: 0 !important;
 }
 
 .sFaq {

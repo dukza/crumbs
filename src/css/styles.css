@@ -190,7 +190,7 @@ body {
 }
 
 .font-20 {
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 
 .font-18 {
@@ -1926,7 +1926,7 @@ a[role="button"].bg-border:hover, button.bg-border:hover {
     font-size: 2.2rem !important;
   }
   .xs-font-20 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .xs-font-18 {
     font-size: 1.8rem !important;
@@ -2952,7 +2952,7 @@ a[role="button"].bg-border:hover, button.bg-border:hover {
     font-size: 2.2rem !important;
   }
   .sm-font-20 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .sm-font-18 {
     font-size: 1.8rem !important;
@@ -3978,7 +3978,7 @@ a[role="button"].bg-border:hover, button.bg-border:hover {
     font-size: 2.2rem !important;
   }
   .md-font-20 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .md-font-18 {
     font-size: 1.8rem !important;
@@ -5004,7 +5004,7 @@ a[role="button"].bg-border:hover, button.bg-border:hover {
     font-size: 2.2rem !important;
   }
   .lg-font-20 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .lg-font-18 {
     font-size: 1.8rem !important;
@@ -6030,7 +6030,7 @@ a[role="button"].bg-border:hover, button.bg-border:hover {
     font-size: 2.2rem !important;
   }
   .xl-font-20 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .xl-font-18 {
     font-size: 1.8rem !important;

@@ -49,10 +49,13 @@
                     </div>
                     <div class="col-12 nav position-absolute" style="top:0px">
                         <a class="nav-link" role="tab" aria-controls="docuProcessDetail" aria-selected="false"  id="docuProcessDetail-" data-bs-toggle="tab" href="#docuProcessDetail" >등기관리/문서함_등기진행현황_상세페이지</a>
-                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-01-" data-bs-toggle="tab" href="#docuBox-01">등기관리/문서함_문서함 – 1</a>
-                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-01-" data-bs-toggle="tab" href="#docuBox-01">등기관리/문서함_문서함 – 1</a>
-                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-02-" data-bs-toggle="tab" href="#docuBox-02">등기관리/문서함_문서함 – 2</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-01-"href="#docuBox-01">등기관리/문서함_문서함 – 1</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-02-"href="#docuBox-02">등기관리/문서함_문서함 – 2</a>
                         <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-03-" data-bs-toggle="tab" href="#docuBox-03">등기관리/문서함_문서함 – 3</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-05-"href="#docuBox-05">등기관리/문서함_문서함 – 5</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="fileBox-" href="#fileBox">파일 박스</a> 
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-06-"href="#docuBox-06">등기관리/문서함_문서함 – 6</a>
+                        <a class="nav-link" role="tab"  aria-selected="false" data-bs-toggle="tab" id="docuBox-history-"href="#docuBox-history">문서함_개정정관 작성</a>
                         
                     </div>
                 </nav> 
@@ -61,7 +64,7 @@
         <!-- 네비 -->
         <div class="container-fluid ">
             <div class="row tab-content">
-                <div class="col-12 tab-pane active" aria-labelledby="docuCare-" role="tabpanel" id="docuCare">
+                <div class="col-12 tab-pane " aria-labelledby="docuCare-" role="tabpanel" id="docuCare">
                     <div class="row">
                         <!-- 페이지 타이틀 -->
                         <div class="col-12 contentTitle-violet">
@@ -460,13 +463,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12 detailTitle">
-                                            <div class="row">
-                                                <span class="text">
-                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
-                                                     등기진행 현황
-                                                </span>
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 등기진행 현황
                                             </div>
-                                        </div>                            
+                                        </div>                 
                                         <div class="col-11 mx-auto contentWrap">
                                             <div class="row">
                                                 <div class="col-12 sBox-white">
@@ -495,15 +495,12 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12 detailTitle">
-                                            <div class="row">
-                                                <span class="text">
-                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
-                                                     활동 이력
-                                                </span>
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 활동 이력
                                             </div>
-                                        </div>                            
+                                        </div>                             
                                         <div class="col-11 mx-auto contentWrap">
-                                            <div class="row">
+                                            <DIV CLASS="ROW">
                                                 <div class="col-12 sectionTitle">
                                                     발송 이력 리스트
                                                 </div>
@@ -511,6 +508,7 @@
                                                     <div class="row overflow-x-auto">
                                                         <table class="col-12 stable table-striped font-16 word-keep white-nowrap bg-white"  >
                                                             <colgroup>
+                                                                <col width="16px">
                                                                 <col width="40%">
                                                                 <col >
                                                                 <col width="20%">
@@ -518,6 +516,7 @@
                                                             </colgroup>
                                                             <thead class="p12-h">
                                                                 <tr class="">
+                                                                    <td class="text-center"></td>
                                                                     <td class="text-center">제목</td>
                                                                     <td class="text-center">발송일</td>
                                                                     <td class="text-center">수신자</td>
@@ -526,6 +525,8 @@
                                                             </thead>
                                                             <tbody class="p10-h"> 
                                                                 <tr>
+                                                                    <td>
+                                                                    </td>
                                                                     <td>
                                                                         리스트 타이틀 입니다
                                                                     </td>
@@ -552,15 +553,12 @@
                         <div class="col-12 detailConWrap">
                             <div class="row">
                                 <div class="container">
-                                    <div class="row">
+                                    <div class="row">   
                                         <div class="col-12 detailTitle">
-                                            <div class="row">
-                                                <span class="text">
-                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
-                                                    발송 이력 리스트
-                                                </span>
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 발송 이력 리스트
                                             </div>
-                                        </div>                            
+                                        </div>                    
                                         <div class="col-11 mx-auto contentWrap">
                                             <div class="row">
                                                 <div class="col-12">
@@ -603,13 +601,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-12 detailTitle">
-                                            <div class="row">
-                                                <span class="text">
-                                                    <button class="btn hover-black"><i class="fal fa-angle-left font-32"></i></button>
-                                                     주주 명부
-                                                </span>
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 주주 명부
                                             </div>
-                                        </div>                            
+                                        </div> 
                                         <div class="col-11 mx-auto contentWrap">
                                             <div class="row">
                                                 <div class="col-12 sectionTitle">
@@ -620,12 +615,14 @@
                                                     <div class="row overflow-x-auto">
                                                         <table class="col-12 stable table-striped font-16 word-keep white-nowrap bg-white"  >
                                                             <colgroup>
+                                                                <col width="16px">
                                                                 <col width="40%">
                                                                 <col >
                                                                 <col width="20%">
                                                             </colgroup>
                                                             <thead class="p12-h">
                                                                 <tr class="">
+                                                                    <td></td>
                                                                     <td class="text-center">제목</td>
                                                                     <td class="text-center">저장일</td>
                                                                     <td class="text-center">공유</td>
@@ -633,6 +630,8 @@
                                                             </thead>
                                                             <tbody class="p10-h"> 
                                                                 <tr>
+                                                                    <td>
+                                                                    </td>
                                                                     <td>
                                                                         리스트 타이틀 입니다
                                                                     </td>
@@ -654,7 +653,224 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="col-12 tab-pane" role="tabpanel" id="docuBox-05" aria-labelledby="docuBox-05-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 주주 명부 리스트
+                                            </div>
+                                        </div>                        
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row overflow-x-auto">
+                                                        <div class="col-12 font-16 sBox-white">
+                                                            <div class="row">
+                                                                <div class="col-12 font-24 p24-b m24-b border-bottom-border d-flex align-items-center">
+                                                                    리스트 제목입니다.
+                                                                </div>
+                                                                <div class="col-12 p28-b m28-b border-bottom-border">
+                                                                    <span class="m40-r">
+                                                                        받는사람:  홍길동
+                                                                    </span>
+                                                                    <span>등록시간:  2020-05-08  16:00</span>
+                                                                </div>
+                                                                <div class="col-12 p16-b">
+                                                                    첨부파일 1건
+                                                                </div>
+                                                                <div class="col-12 font-18 bg-lighter p20-h p40-x d-flex align-items-center">
+                                                                    첨부파일. pdf<span class="font-18 text-brand-violet-main text-decoration-underline ml-auto">다운로드</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 버튼 -->
+                                                        <div class="col-12 text-center p64-t">
+                                                            <button class="btn btn-violet-main font-20 p20-h p112-x">외부로 공유하기</button>
+                                                        </div>
+                                                        <!-- //버튼 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane " role="tabpanel" id="fileBox" aria-labelledby="fileBox-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 파일박스
+                                                <button class="btn btn-violet-main font-16 ml-auto">추가하기</button>
+                                            </div>
+                                        </div>                      
+                                        <div class="col-12 contentWrap">
+                                            <div class="row">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-12 d-grid" style="grid-template-columns: repeat(auto-fill, minmax(210px, auto));grid-auto-rows: minmax(194px, auto);gap: 20px;">
+                                                                    <div class="sBox-form hover-black position-relative">
+                                                                        <div class="row ">
+                                                                            <a class="text-black btn-right" href=""><i class="fal fa-times"></i></a>
+                                                                            <div class="icon-icon-document font-38 m12-b"></div>
+                                                                            <div class="m24-b">
+                                                                                파일명.pdf
+                                                                            </div>
+                                                                            <div>
+                                                                                <button class="btn btn-violet-main"><i class="fas fa-arrow-to-bottom font-16"></i></button>
+                                                                                <button class="btn btn-mutedLighter text-white">
+                                                                                    <i class="fas fa-share-alt font-16"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane" role="tabpanel" id="docuBox-06" aria-labelledby="docuBox-06-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 문서 리스트
+                                            </div>
+                                        </div>                        
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row overflow-x-auto">
+                                                        <div class="col-12 font-16 sBox-white">
+                                                            <div class="row">
+                                                                <div class="col-12 font-24 p24-b m24-b border-bottom-border d-flex align-items-center">
+                                                                    리스트 제목입니다.
+                                                                </div>
+                                                                <div class="col-12 p28-b m28-b border-bottom-border">
+                                                                    <span class="m40-r">
+                                                                        받는사람:  홍길동
+                                                                    </span>
+                                                                    <span>등록시간:  2020-05-08  16:00</span>
+                                                                </div>
+                                                                <div class="col-12 p16-b">
+                                                                    첨부파일 1건
+                                                                </div>
+                                                                <div class="col-12 font-18 bg-lighter p20-h p40-x d-flex align-items-center">
+                                                                    첨부파일. pdf<span class="font-18 text-brand-violet-main text-decoration-underline ml-auto">다운로드</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 버튼 -->
+                                                        <div class="col-12 text-center p64-t">
+                                                            <button class="btn btn-violet-main font-20 p20-h p112-x">외부로 공유하기</button>
+                                                        </div>
+                                                        <!-- //버튼 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 tab-pane active" role="tabpanel" id="docuBox-history" aria-labelledby="docuBox-history-">
+                    <div class="row">
+                        <div class="col-12 detailConWrap">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 detailTitle">
+                                            <div class="row align-items-center">
+                                                <button class="btn btn-left"><i class="fal fa-angle-left"></i></button> 개정정관 작성
+                                            </div>
+                                        </div>                        
+                                        <div class="col-11 mx-auto contentWrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row overflow-x-auto">
+                                                        <div class="col-12 font-16 sBox-white">
+                                                            <div class="row">
+                                                                <div class="col-12 font-24 p24-b m24-b d-flex align-items-center">
+                                                                    정관을 업로드해주세요.
+                                                                </div>
+                                                                <div class="col-12 col-lg-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12 m28-b">
+                                                                            <div class="row d-flex align-items-center">
+                                                                                <div class="col-auto font-16 text-left sLabel">
+                                                                                    정관 파일
+                                                                                </div>    
+                                                                                <div class="col p8-r">
+                                                                                    <div class="w-100 ">
+                                                                                        <input class="form-control p16-h m8-r" type="email" placeholder="선택한 파일 없음">
+                                                                                    </div>
+                                                                                </div> 
+                                                                                <div class="col col-lg-3">
+                                                                                    <button class="btn w-100 p12 font-16 text-ink bg-lighter border-formLight">기존 파일 불러오기</button>
+                                                                                </div>                                   
+                                                                            </div>
+                                                                        </div> 
+                                                                        <div class="col-12">
+                                                                            <div class="row d-flex align-items-start">
+                                                                                <div class="col-auto font-16 text-left sLabel">
+                                                                                    요청 사항
+                                                                                </div>    
+                                                                                <div class="col">
+                                                                                    <div class="w-100 ">
+                                                                                        <textarea class="form-control" name="" id="" cols="30" rows="6"
+                                                                                        placeholder="요청사항을 입력해 주세요."
+                                                                                        ></textarea>
+                                                                                    </div>
+                                                                                </div>                            
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div>                                                                    
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- 버튼 -->
+                                                        <div class="col-12 col-lg-4 mx-auto text-center p64-t">
+                                                            <button class="w-100 btn btn-violet-main font-20 p20-h p112-x">요청 하기</button>
+                                                        </div>
+                                                        <!-- //버튼 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 하단 -->
